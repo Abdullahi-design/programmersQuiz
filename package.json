@@ -1,12 +1,11 @@
 {
-  "name": "firequiz",
+  "name": "programmersQuiz",
   "version": "0.0.4",
-  "description": "Who wants to be a JavaScript millionaire?",
-  "homepage": "https://fireship.io",
+  "description": "Who wants to be a Programmer millionaire?",
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "https://github.com/fireship-io/javascript-millionaire"
+    "url": "https://github.com/Abdullahi-design/programmersQuiz"
   },
   "main": "index.js",
   "scripts": {
