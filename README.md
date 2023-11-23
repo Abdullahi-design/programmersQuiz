@@ -2,6 +2,8 @@
 
 A super fancy CLI tool. 
 
+Watch the full [Node.js CLI Tutorial](https://youtu.be/_oHByo8tiEY) video on YouTube. 
+
 
 
 ## Take the Quiz
