@@ -1,7 +1,8 @@
 {
-  "name": "programmersQuiz",
+  "name": "programmersquiz",
   "version": "0.0.4",
-  "description": "Who wants to be a Programmer millionaire?",
+  "description": "Who wants to be a JavaScript millionaire?",
+  "homepage": "https://fireship.io",
   "type": "module",
   "repository": {
     "type": "git",
