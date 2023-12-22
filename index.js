@@ -36,6 +36,7 @@ async function welcome() {
     ${chalk.bgBlue('HOW TO PLAY')} 
     I am a process on your computer.
     If you get any question wrong I will be ${chalk.bgRed('killed')}
+    You have ${chalk.bgRed('10 Seconds')} to answer each question
     So get all the questions right...
 
   `);
@@ -80,7 +81,18 @@ function winner() {
   });
 }
 
+let timeOutId;
+
+function timeUp() {
+   timeOutId = setTimeout(()=>{
+      const spinner = createSpinner('Checking timeOut...').start();
+        spinner.error({ text: `TimeOut:💀💀💀 Game over, you lose ${playerName}!` });
+        process.exit(1);
+    }, 10000)
+}
+
 async function question1() {
+  
   const answers = await inquirer.prompt({
     name: 'question_1',
     type: 'list',
@@ -97,6 +109,8 @@ async function question1() {
 }
 
 async function question2() {
+  clearTimeout(timeOutId)
+  timeUp();
   const answers = await inquirer.prompt({
     name: 'question_2',
     type: 'list',
@@ -107,6 +121,8 @@ async function question2() {
 }
 
 async function question3() {
+  clearTimeout(timeOutId)
+  timeUp();
   const answers = await inquirer.prompt({
     name: 'question_3',
     type: 'list',
@@ -118,6 +134,8 @@ async function question3() {
 }
 
 async function question4() {
+  clearTimeout(timeOutId)
+  timeUp();
   const answers = await inquirer.prompt({
     name: 'question_4',
     type: 'list',
@@ -133,6 +151,8 @@ async function question4() {
 }
 
 async function question5() {
+  clearTimeout(timeOutId)
+  timeUp();
   const answers = await inquirer.prompt({
     name: 'question_5',
     type: 'list',
